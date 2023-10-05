@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog Fernando</title>
     <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
         .centralizado {
             margin-left: auto;
             margin-right: auto;
@@ -17,6 +20,8 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            max-width: 100%;
+            height: auto;
         }
         a {
             text-decoration: none;
@@ -27,58 +32,74 @@
 <body class="centralizado">
     
     <header>
-        <h1><a id="inicio"></a>Falando de HTML</h1>
-        <li>
+        <h1><a id="inicio"></a>Introdução ao HTML</h1>
+        <ul>
             <a href="#introducao">Introdução</a>
-        </li>
-        <li>
-            <a href="#imporhtml">A importância do HTML</a>
-        </li>
-        <li>
+        </ul>
+        <ul>
+            <a href="#imporhtml">HTML</a>
+        </ul>
+        <ul>
             <a href="#bdy">Tag body</a>
-        </li>
-        <li>
-            <a href="#titulos">Da h1 até a h6</a>
-        </li>
-        <li>
+        </ul>
+        <ul>
+            <a href="#titulos">Tag h1 até a h6</a>
+        </ul>
+        <ul>
             <a href="#referencia">Referências</a>
-        </li>
+        </ul>
     </header>
     <hr>
     <h2 id="introducao">Introdução</h2>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem quae inventore, aliquid corrupti sunt molestiae. Nam harum hic dolore officia quisquam rem blanditiis enim? Dolore sed aliquid rerum molestiae dolores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi doloremque expedita voluptatum error, ipsa aut iusto perspiciatis veritatis magnam fuga illum molestias laudantium quae numquam. Dignissimos necessitatibus rem beatae officiis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod quasi odit illum ipsam nobis, consectetur pariatur libero accusamus dolorum voluptatibus beatae provident, deleniti quae perspiciatis atque soluta sequi fugiat ipsum?</p> 
-    <a href="#inicio">Voltar</a>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem quae inventore, aliquid corrupti sunt molestiae. Nam harum hic dolore officia quisquam rem blanditiis enim? Dolore sed aliquid rerum molestiae dolores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi doloremque expedita voluptatum error, ipsa aut iusto perspiciatis veritatis magnam fuga illum molestias laudantium quae numquam. Dignissimos necessitatibus rem beatae officiis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod quasi odit illum ipsam nobis, consectetur pariatur libero accusamus dolorum voluptatibus beatae provident, deleniti quae perspiciatis atque soluta sequi fugiat ipsum? <a href="#inicio">Voltar</a></p> 
+    
 
-    <h2 id="imporhtml">A importância do HTML</h2>
-    <p>O HTML, que significa "HyperText Markup Language" (Linguagem de Marcação de Hipertexto), é uma parte fundamental na produção de sites. Ele desempenha um papel crucial na criação e estruturação de páginas da web. Aqui estão algumas razões que destacam a importância do HTML na produção de sites: <br>
+    <h2 id="imporhtml">HTML</h2>
+    <p>O HTML, que significa "HyperText Markup Language" (Linguagem de Marcação de Hipertexto), é uma parte fundamental na produção de sites. Ele desempenha um papel crucial na criação e estruturação de páginas da web. Aqui estão algumas razões que destacam a importância do HTML na produção de sites: <br><br>
 
-        <b>1.</b> Estruturação do Conteúdo: O HTML permite que os desenvolvedores estruturem o conteúdo de uma página da web de forma organizada e hierárquica. Isso inclui cabeçalhos, parágrafos, listas, links e outros elementos que tornam o conteúdo compreensível e acessível. <br>
+        <b>1.</b> Estruturação do Conteúdo: O HTML permite que os desenvolvedores estruturem o conteúdo de uma página da web de forma organizada e hierárquica. Isso inclui cabeçalhos, parágrafos, listas, links e outros elementos que tornam o conteúdo compreensível e acessível. <br><br>
         
-        <b>2.</b> Compatibilidade: O HTML é suportado por todos os principais navegadores da web, tornando-o uma escolha universal para desenvolver sites que funcionem bem em diferentes plataformas e dispositivos. <br>
+        <b>2.</b> Compatibilidade: O HTML é suportado por todos os principais navegadores da web, tornando-o uma escolha universal para desenvolver sites que funcionem bem em diferentes plataformas e dispositivos. <br><br>
         
-        <b>3.</b> Acessibilidade: O HTML oferece recursos que permitem melhorar a acessibilidade de um site, tornando-o mais utilizável para pessoas com deficiências visuais ou motoras. Tags como alt text em imagens e marcação semântica ajudam a melhorar a experiência de todos os usuários. <br>
+        <b>3.</b> Acessibilidade: O HTML oferece recursos que permitem melhorar a acessibilidade de um site, tornando-o mais utilizável para pessoas com deficiências visuais ou motoras. Tags como alt text em imagens e marcação semântica ajudam a melhorar a experiência de todos os usuários. <br><br>
         
-        <b>4.</b> SEO (Otimização para Mecanismos de Busca): Os mecanismos de busca utilizam o HTML para rastrear e indexar o conteúdo de um site. Usar HTML de forma adequada e semântica pode melhorar a visibilidade de um site nos resultados de busca. <br>
+        <b>4.</b> SEO (Otimização para Mecanismos de Busca): Os mecanismos de busca utilizam o HTML para rastrear e indexar o conteúdo de um site. Usar HTML de forma adequada e semântica pode melhorar a visibilidade de um site nos resultados de busca. <br><br>
         
-        <b>5.</b> Integração com CSS e JavaScript: O HTML trabalha em conjunto com o CSS (Cascading Style Sheets) e o JavaScript para controlar o design e o comportamento de um site. Isso permite criar sites visualmente atraentes e interativos. <br>
+        <b>5.</b> Integração com CSS e JavaScript: O HTML trabalha em conjunto com o CSS (Cascading Style Sheets) e o JavaScript para controlar o design e o comportamento de um site. Isso permite criar sites visualmente atraentes e interativos. <br><br>
         
-        <b>6.</b> Facilidade de Aprendizado: O HTML é uma linguagem de marcação relativamente simples de aprender. Isso significa que aspirantes a desenvolvedores web podem rapidamente começar a criar suas próprias páginas da web com conhecimentos básicos de HTML. <br>
+        <b>6.</b> Facilidade de Aprendizado: O HTML é uma linguagem de marcação relativamente simples de aprender. Isso significa que aspirantes a desenvolvedores web podem rapidamente começar a criar suas próprias páginas da web com conhecimentos básicos de HTML. <br><br>
         
-        <b>7.</b> Evolução Constante: O HTML está em constante evolução, com novas versões e recursos sendo desenvolvidos para atender às crescentes demandas da web moderna. Isso permite que os desenvolvedores acompanhem as tendências e adotem as melhores práticas. <br>
+        <b>7.</b> Evolução Constante: O HTML está em constante evolução, com novas versões e recursos sendo desenvolvidos para atender às crescentes demandas da web moderna. Isso permite que os desenvolvedores acompanhem as tendências e adotem as melhores práticas. <br><br>
         
-        Em resumo, o HTML é a espinha dorsal da web e desempenha um papel fundamental na criação de sites. Ele fornece a estrutura e a semântica necessárias para tornar o conteúdo da web acessível, compatível com vários dispositivos e otimizado para mecanismos de busca, contribuindo para uma experiência de usuário eficaz e agradável na web.</p>
-        <a href="#inicio">Voltar</a>
+        Em resumo, o HTML é a espinha dorsal da web e desempenha um papel fundamental na criação de sites. Ele fornece a estrutura e a semântica necessárias para tornar o conteúdo da web acessível, compatível com vários dispositivos e otimizado para mecanismos de busca, contribuindo para uma experiência de usuário eficaz e agradável na web. <a href="#inicio">Voltar</a></p>
+        
 
     <h2 id="bdy">Tag body</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus inventore nemo impedit rem ratione ipsam asperiores delectus corporis, quasi molestias atque possimus, enim mollitia excepturi dolorum consectetur modi commodi dicta. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus laborum harum, in nesciunt quisquam aut mollitia atque, cupiditate veniam asperiores quod quam reprehenderit. Dicta iste eaque perspiciatis totam cupiditate rerum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem distinctio sit voluptatum architecto commodi accusamus! Voluptates minus aspernatur laborum illo. Quos velit ducimus labore alias necessitatibus commodi explicabo recusandae? Exercitationem!</p>
-    <a href="#inicio">Voltar</a>
+    <p>A tag <b>body</b> é uma das tags mais importantes em HTML, pois é onde o conteúdo visível de uma página web é colocado. Aqui estão algumas das principais razões pelas quais a tag <b>body</b> é fundamental: <br><br>
+
+        1. Conteúdo Visível: A tag body envolve todo o conteúdo que é exibido na página da web, incluindo texto, imagens, vídeos, links e outros elementos. É a área onde os usuários interagem diretamente com o site, por isso é essencial para a experiência do usuário. <br><br>
+        
+        2. Estrutura da Página: A tag body define a estrutura básica da página. Geralmente, o conteúdo do cabeçalho, navegação, corpo principal e rodapé de uma página da web é organizado dentro do elemento body. Isso ajuda a organizar o conteúdo e facilita a formatação da página com CSS. <br><br>
+        
+        3. Elementos Semânticos: Dentro do body, você usa outras tags HTML para criar a estrutura semântica da página, como <b>header, nav, main, article, section, footer</b> e outras. Essas tags ajudam os motores de busca e leitores de tela a compreender a estrutura e o significado do conteúdo. <br><br>
+        
+        4. Scripts e Eventos: A tag body também é o local onde você pode incluir <b>scripts JavaScript</b> para adicionar interatividade à sua página. Você pode anexar manipuladores de eventos, como cliques de mouse e teclado, à tag body, bem como incorporar scripts externos. <br><br>
+        
+        5. Metadados: Além do conteúdo visível, você pode incluir metadados importantes, como metatags meta, dentro do body para fornecer informações adicionais sobre a página, como autor, descrição, palavras-chave e outros dados relevantes. <br><br>
+        
+        6. Acessibilidade: A tag body desempenha um papel crucial na acessibilidade da web. Garantir que sua página tenha uma estrutura adequada e semântica dentro do body torna mais fácil para leitores de tela e outros dispositivos assistivos interpretarem o conteúdo. <br><br>
+        
+        Em resumo, a tag body é fundamental na criação de páginas da web, pois contém o conteúdo principal e define a estrutura e a semântica da página. Portanto, é importante usá-la corretamente e de forma semântica para criar páginas web acessíveis e bem estruturadas. <a href="#inicio">Voltar</a></p>
+    
 
     <h2 id="titulos">Da h1 até a h6</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium mollitia est quae voluptates quos numquam expedita? Voluptatibus fuga temporibus nam ipsam deleniti in reprehenderit corrupti accusantium molestias a, deserunt quo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt inventore blanditiis eveniet aperiam reprehenderit distinctio voluptatum possimus nulla nam perferendis eius aut assumenda dolorem quo, dolores numquam perspiciatis dolore porro? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa iure quidem maiores laborum modi incidunt, laboriosam temporibus omnis consequuntur molestias corporis illum voluptates eius consectetur distinctio dignissimos similique, explicabo eum?</p>
-    <a href="#inicio">Voltar</a>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium mollitia est quae voluptates quos numquam expedita? Voluptatibus fuga temporibus nam ipsam deleniti in reprehenderit corrupti accusantium molestias a, deserunt quo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt inventore blanditiis eveniet aperiam reprehenderit distinctio voluptatum possimus nulla nam perferendis eius aut assumenda dolorem quo, dolores numquam perspiciatis dolore porro? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa iure quidem maiores laborum modi incidunt, laboriosam temporibus omnis consequuntur molestias corporis illum voluptates eius consectetur distinctio dignissimos similique, explicabo eum? <a href="#inicio">Voltar</a></p>
+    
 
     <h2 id="referencia">Referências</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam dolorem iusto consectetur sapiente laboriosam asperiores aliquid minima, tempore beatae distinctio corporis aliquam rem quibusdam voluptatum quasi possimus amet dolor nesciunt! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste, quam laudantium accusantium reprehenderit a impedit voluptates architecto repudiandae assumenda! Quasi sapiente debitis voluptatum iusto eum non enim earum itaque molestias! Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur debitis dolore officiis quo iusto amet eius cumque distinctio accusamus labore? Consequuntur deleniti illum ut porro quidem consequatur, dicta minima quod.</p>
+    <p>
+        <a href="https://developer.mozilla.org/pt-BR/docs/Learn/HTML">Estruturando a web com HTML</a>
+    </p>
     <a href="#inicio">Voltar</a>
     
 </body>
